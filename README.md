@@ -1,33 +1,19 @@
-# AtlasOps Program
+# AtlasOps POS (Windows)
 
-AtlasOps Program is the desktop POS client for AtlasOps.  
-It is distributed as a Java `.jar` so teams can download and run it directly.
-
-## What It Does
-
-- Runs POS workflows from a desktop terminal
-- Connects to your live AtlasOps account
-- Supports role-based access and authenticated sessions
-- Works with AtlasOps backend and Firebase services
+AtlasOps POS is the desktop point-of-sale client for AtlasOps operations.
 
 ## Download
 
-Get the latest build from the [Releases](../../releases) page.
+Get the latest release assets from GitHub Releases:
 
-## Run
+- `AtlasOpsPOS-Setup-0.1.0.exe`
+- `AtlasOpsPOS-Setup-0.1.0.exe.sha256`
+- `atlasops-codesign.cer`
+- `trust-atlasops-codesign-cert.ps1`
 
-After downloading the JAR:
+## First-Time Trust Setup (Private Distribution)
 
-```bash
-java -jar atlasops-pos-<version>.jar
-```
+Because this build is signed with an internal/private code-signing certificate, run this once before installing:
 
-## Requirements
-
-- Java 17 or newer
-- Network access to AtlasOps services
-
-## Updates
-
-New versions are published through GitHub Releases.  
-Download the latest JAR when a new release is available.
+```powershell
+powershell -ExecutionPolicy Bypass -File .\trust-atlasops-codesign-cert.ps1
