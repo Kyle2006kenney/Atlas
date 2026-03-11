@@ -22,11 +22,3 @@ Install
 Run:
 AtlasOpsPOS-Setup-0.1.0.exe
 The installer adds Start Menu/Desktop shortcuts for AtlasOpsPOS.
-Verify Integrity (Recommended)
-Get-FileHash .\AtlasOpsPOS-Setup-0.1.0.exe -Algorithm SHA256
-Expected SHA256:
-85745AF9032159B39B4A80FC3F48B7533162F65EC22978CA7FC91CE627396D34
-Notes
-•This installer includes the runtime needed to launch the program.
-•Subscription and access checks are enforced inside the program.
-•For internal team machines, trust setup is required once per user profile.
